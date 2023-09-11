@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS animation, transitions and transforms</title>
+
+    <!-- OUR STYLESHEET -->
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+
+    <!-- FONT ِAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <ul class="menu1">
+          <li class="items1">
+            <a href="#">home</a>
+          </li>
+          <li class="items1">
+            <a href="#">about</a>
+          </li>
+          <li class="items1">
+            <a href="#">services</a>
+          </li>
+          <li class="items1">
+            <a href="#">team</a>
+          </li>
+          <li class="items1">
+            <a href="#">contact</a>
+          </li>
+        </ul>
+        <h2 class="animation1">COMING <br />SOON!<br /></h2>
+      </div>
+      <div class="container">
+        <ul class="menu2">
+          <li class="items2"><a href="#">home</a></li>
+          <li class="items2"><a href="#">about</a></li>
+          <li class="items2"><a href="#">services</a></li>
+          <li class="items2"><a href="#">portfolio</a></li>
+          <li class="items2"><a href="#">contact</a></li>
+        </ul>
+        <div class="loading"></div>
+      </div>
+      <div class="container">
+        <ul class="menu3">
+          <li class="items3">
+            <a href="#">home</a>
+          </li>
+          <li class="items3">
+            <a href="#">about</a>
+          </li>
+          <li class="items3">
+            <a href="#">services</a>
+          </li>
+          <li class="items3">
+            <a href="#">portfolio</a>
+          </li>
+          <li class="items3">
+            <a href="#">contact</a>
+          </li>
+        </ul>
+        <a class="shake" href="#">Hover Me</a>
+      </div>
+      <div class="container">
+        <ul class="menu4">
+          <li class="items4">
+            <a class="link4" href="#">
+              home
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </li>
+
+          <li class="items4">
+            <a class="link4" href="#">
+              about
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </li>
+
+          <li class="items4">
+            <a class="link4" href="#">
+              services
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </li>
+
+          <li class="items4">
+            <a class="link4" href="#">
+              team
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </li>
+
+          <li class="items4">
+            <a class="link4" href="#">
+              contact
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </li>
+        </ul>
+        <a class="animation-hover" href="#">Hover Me</a>
+      </div>
+      <div class="container">
+        <ul class="menu5">
+          <li class="items5">
+            <a href="#">
+              <span>home</span>
+              <span>home</span>
+            </a>
+          </li>
+          <li class="items5">
+            <a href="#">
+              <span>about</span>
+              <span>about</span>
+            </a>
+          </li>
+          <li class="items5">
+            <a href="#">
+              <span>services</span>
+              <span>services</span>
+            </a>
+          </li>
+          <li class="items5">
+            <a href="#">
+              <span>portfolio</span>
+              <span>portfolio</span>
+            </a>
+          </li>
+          <li class="items5">
+            <a href="#">
+              <span>contact</span>
+              <span>contact</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu6">
+          <li class="items6"><a href="#" data-text="Home">Home</a></li>
+          <li class="items6"><a href="#" data-text="About">About</a></li>
+          <li class="items6"><a href="#" data-text="Services">Services</a></li>
+          <li class="items6"><a href="#" data-text="Team">Team</a></li>
+          <li class="items6"><a href="#" data-text="Contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="animations-section">
+        <div class="container">
+          <div class="car-wrap">
+            <div class="background">
+              <img src="./img/car.png" class="car" />
+              <img src="./img/motobike.png" class="motorbike" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="h1-container">
+          <h1>text</h1>
+        </div>
+        <div class="container">
+          <h2 class="animated-title">I Love Css <span></span></h2>
+          <div class="loader2">
+            <span class="top-half">loading</span>
+            <span class="bottom-half">loading</span>
+          </div>
+        </div>
+        <div class="container">
+          <div class="box-3">
+            <span class="rotated-3"></span>
+            <h2>
+              CSS<br />
+              <span>border</span>
+              <br />
+              hover<br />
+              effect
+            </h2>
+          </div>
+          <div class="wave2">
+            <h2>wave</h2>
+            <h2>wave</h2>
+          </div>
+          <ul class="menu8">
+            <li class="items8">S</li>
+            <li class="items8">M</li>
+            <li class="items8">O</li>
+            <li class="items8">K</li>
+            <li class="items8">Y</li>
+          </ul>
+        </div>
+        <div class="container">
+          <ul class="lighting">
+            <li>L</li>
+            <li>I</li>
+            <li>G</li>
+            <li>H</li>
+            <li>T</li>
+            <li>I</li>
+            <li>N</li>
+            <li>G</li>
+          </ul>
+          <div class="heart"></div>
+        </div>
+        <div class="container">
+          <div class="bg-img-animation-wrap">
+            <h2 class="bg-img-animation">Css Animation</h2>
+          </div>
+        </div>
+        <div class="container">
+          <ul class="jumping">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <ul class="round-animation">
+            <li><i class="fas fa-heart"></i></li>
+            <li><i class="fas fa-glass-martini"></i></li>
+            <li><i class="fas fa-globe"></i></li>
+            <li><i class="fas fa-gift"></i></li>
+          </ul>
+        </div>
+        <div class="container">
+          <div class="rain-wrap">
+            <div class="rain"></div>
+          </div>
+        </div>
+        <div class="container">
+          <ul class="loading-animation">
+            <li>L</li>
+            <li>O</li>
+            <li>A</li>
+            <li>D</li>
+            <li>I</li>
+            <li>N</li>
+            <li>G</li>
+          </ul>
+          <div class="pulse">
+            <i class="fas fa-phone"></i>
+          </div>
+        </div>
+        <div class="container">
+          <a class="btn30" href="#">
+            <span>button</span>
+            <span>button</span>
+          </a>
+          <ul class="menu10">
+            <li class="items10">
+              <a href="#" data-text="home">home</a>
+            </li>
+            <li class="items10">
+              <a href="#" data-text="about">about</a>
+            </li>
+            <li class="items10">
+              <a href="#" data-text="services">services</a>
+            </li>
+            <li class="items10">
+              <a href="#" data-text="team">team</a>
+            </li>
+            <li class="items10">
+              <a href="#" data-text="contact">contact</a>
+            </li>
+          </ul>
+          <div class="card20">
+            <h3>information</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <ul class="menu-hover5">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Team</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="container">
+          <div class="container5">
+            <div class="clip clip1"></div>
+            <div class="clip clip2"></div>
+            <div class="clip clip3"></div>
+          </div>
+          <div class="card20">
+            <div class="img20">
+              <img src="./img/img9.jpg" />
+            </div>
+            <div class="content20">
+              <h2>title</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="icon-container">
+            <a class="icon" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="icon" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="icon" href="#">
+              <i class="fab fa-google"></i>
+            </a>
+            <a class="icon" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="icon" href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+          <div class="chase">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="container">
+          <div class="cradle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="animated-loading">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="container">
+          <h2 class="loading4">loading..</h2>
+          <div class="container10">
+            <div class="text">loading</div>
+            <div class="ring"></div>
+          </div>
+          <div class="loading5"></div>
+        </div>
+        <div class="container">
+          <div class="loading7">
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+          </div>
+          <div class="loader9">
+            <div class="outer"></div>
+            <div class="middle"></div>
+            <div class="inner"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="loader12">
+            <span class="s1"></span>
+            <span class="s2"></span>
+            <span class="s3"></span>
+            <span class="s4"></span>
+            <span class="s5"></span>
+            <span class="s6"></span>
+            <span class="s7"></span>
+            <span class="s8"></span>
+            <span class="s9"></span>
+          </div>
+        </div>
+        <div class="container">
+          <div class="loader13">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="glass-wrap">
+            <div class="glass2">
+              <div class="inner2">
+                <div class="liquid2"></div>
+              </div>
+            </div>
+            <div class="glass2">
+              <div class="inner2">
+                <div class="liquid2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="line">
+            <div class="hexagon"></div>
+          </div>
+        </div>
+        <div class="container15-wrap container">
+          <div class="container15">
+            <div class="square2"></div>
+            <div class="square2"></div>
+            <div class="square2"></div>
+            <div class="square2"></div>
+            <div class="square2"></div>
+            <div class="square2"></div>
+            <div class="square2"></div>
+            <div class="square2"></div>
+            <div class="square2"></div>
+            <div class="square2"></div>
+            <div class="text15">background animation</div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <a class="btn1" href="#">button hover effect</a>
+          <a class="btn2" href="#"><span class="btn2-span">hover me</span></a>
+          <a class="btn3" href="#">hover me</a>
+        </div>
+        <div class="container">
+          <button class="btn4">submit</button>
+          <a class="btn5" href="#"><span>B</span>utton</a>
+          <button class="btn6">
+            button
+            <span></span>
+          </button>
+        </div>
+        <div class="container">
+          <a class="btn7" href="#">
+            button
+            <div class="wave"></div>
+          </a>
+          <a class="btn8" href="#">
+            button
+            <span></span>
+          </a>
+          <a class="btn9" href="#">button</a>
+        </div>
+        <div class="container">
+          <a class="btn10" href="#">hover me</a>
+          <div class="container">
+            <a class="btn11" href="#">button</a>
+          </div>
+          <a class="btn12" href="#">Hover Me</a>
+        </div>
+        <div class="container">
+          <a class="btn13" href="#">Hover Me</a>
+          <a class="btn14" href="#">hover me</a>
+          <a class="btn15" href="#">button</a>
+        </div>
+        <div class="container">
+          <a class="btn16" href="#">Hover Me</a>
+          <a class="btn17" href="#">Hover Me</a>
+          <a class="btn18" href="#">Hover Me</a>
+        </div>
+        <div class="container">
+          <a class="btn19" href="#">Hover Me</a>
+          <button class="btn20">button</button>
+          <a class="btn21" href="#">Button</a>
+        </div>
+        <div class="container">
+          <a class="btn22" href="#">button</a>
+
+          <a class="btn23" href="#"><span></span>hover me</a>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="card2">
+            <div class="face face1">
+              <div class="content2">
+                <h2>services</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod, consectetur adipisicing elit, sed do eiusmod
+                </p>
+                <a class="card2-a" href="#">read more</a>
+              </div>
+            </div>
+            <div class="face face2">
+              <h2>88</h2>
+            </div>
+          </div>
+          <div class="card3">
+            <div class="face3-1">
+              <div class="imgbox">
+                <img class="img3" src="./img/2.png" />
+                <h3 class="title3">design</h3>
+              </div>
+            </div>
+            <div class="face3-2">
+              <div class="content3">
+                <p class="p3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  cum cumque minus iste veritatis provident at.
+                </p>
+                <a class="card3-a" href="#">read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <h2>captain marvel</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a class="card-a" href="#">read more</a>
+            </div>
+            <img class="card-img" src="./img/1.png" />
+          </div>
+        </div>
+        <div class="container">
+          <div class="container2">
+            <img src="./img/img1.png" />
+            <div class="caption">
+              <h2>amazing caption!</h2>
+              <p>you can write anything here!</p>
+            </div>
+          </div>
+          <div class="container3">
+            <img src="./img/img1.png" />
+            <div class="caption3">
+              <h2>amazing caption</h2>
+              <p>you can write anything here!</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="container4">
+            <img src="./img/img1.png" />
+            <div class="caption4">
+              <h2>amazing caption</h2>
+              <p>you can write anything here!</p>
+            </div>
+          </div>
+          <div class="container5">
+            <img src="./img/img2.jpg" />
+            <div class="caption5">
+              <h2>amazing caption</h2>
+              <p>you can write anything here!</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="fig">
+            <img src="./img/img3.png" />
+            <div class="caption6">
+              <h3>amazing caption!</h3>
+              <h5>you can write anything here!</h5>
+            </div>
+          </div>
+          <div class="girl-wrap">
+            <img src="./img/girl.jpg" />
+          </div>
+        </div>
+        <div class="container">
+          <div class="container6">
+            <img src="./img/img4.jpg" />
+            <div class="caption6">
+              <h2>image hover</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+          <div class="container7">
+            <img src="./img/img4.jpg" />
+            <div class="caption7">
+              <h2>Hover Style #2</h2>
+              <p>
+                A wonderful serenity has taken possession of my entire soul,
+                like these sweet mornings of spring which I enjoy with my whole
+                heart.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="container8">
+            <img class="caption8-img" src="./img/img4.jpg" />
+            <div class="caption8">
+              <h2 class="caption8-title">Hover Style #2</h2>
+              <p class="caption8-text">
+                A wonderful serenity has taken possession of my entire soul,
+                like these sweet mornings of spring which I enjoy with my whole
+                heart.
+              </p>
+              <a class="caption8-link" href="#">Read More</a>
+            </div>
+          </div>
+          <div class="container9">
+            <img src="./img/img4.jpg" />
+            <div class="caption9">
+              <h2>Hover Style #4</h2>
+              <p>
+                A wonderful serenity has taken possession of my entire soul,
+                like these sweet mornings of spring which I enjoy with my whole
+                heart.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card5">
+            <div class="imgbox5">
+              <img src="./img/img5.jpg" />
+            </div>
+            <div class="content5">
+              <h2>card hover</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam,
+              </p>
+            </div>
+          </div>
+          <div class="card6">
+            <div class="imgbox6">
+              <img src="./img/img6.jpg" />
+            </div>
+            <div class="details6">
+              <h2>
+                john doe<br />
+                <span>founder</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card7">
+            <div class="imgbox7">
+              <img src="./img/img7.jpg" />
+            </div>
+            <div class="content7">
+              <h3>post title</h3>
+              <p>
+                lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamcon Ut enim
+                ad minim veniam, quis nostrud exercitation
+              </p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="banner"></div>
+        </div>
+        <div class="container">
+          <div class="slider"></div>
+        </div>
+        <div class="container">
+          <div class="changed-bg-wrap">
+            <h2 class="changed-bg">changed<br />background color</h2>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>
+        by Alex Smagin. <span id="year">2023</span> CSS Animation library&copy;
+      </p>
+    </footer>
+
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
