@@ -1689,10 +1689,10 @@ body {
   width: 300px;
   height: 3px;
   background-color: #868e96;
-  animation: line 2s infinite alternate;
+  animation: line5 2s infinite alternate;
 }
 
-@keyframes line {
+@keyframes line5 {
   0% {
     transform: scaleX(0);
     transform-origin: left;
