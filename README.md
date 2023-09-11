@@ -1,6 +1,6 @@
 # CSS Animation Library <img align="right" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100"/>
 
-I've just created CSS animation library with different menus effects, hover effects, buttons, product cards, gift cards, animations and etc. for be able at any moment open and check some CSS styles.
+I've just created CSS animation library with different menus effects, hover effects, buttons, product cards, gift cards, animations and etc. for be able at any moment to open and check some CSS styles.
 
 ### Languages and Tools:
 <div align="center">  
